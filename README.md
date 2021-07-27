@@ -1,4 +1,4 @@
-### This repository containes our implementation for the approach presented in our paper: <em>"See the silence: improving visual-only voice activity detection by optical flow and RGB fusion"</em>. <br><br>
+This repository containes our implementation for the approach presented in our paper: **<em>"See the silence: improving visual-only voice activity detection by optical flow and RGB fusion"</em>**. <br><br>
 The paper is available here: https://github.com/rescer/VVADpaper <br><br>
 This program needs to be run twice: one time with RGB inputs, and second time with optical flow inputs. <br><br>
 To create mean and standard deviation statistics, the **learn_trainingsubset_statistics.py** needs to be called for RGB and optical flow separately. The resulting .npy file will have to be named correspondingly. The file name string is used as a parameter in **vvad_train.py**, **vvad_test.py** and **vvad_fusion_test.py**, where 2 separate .npy files are necessary. <br><br>
