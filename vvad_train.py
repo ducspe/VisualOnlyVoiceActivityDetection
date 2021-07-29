@@ -3,7 +3,6 @@ from validation_dataset import TestValDataset
 import torch
 from networks.video_network import VideoNet
 from torch.utils.data import DataLoader
-import torch.nn as nn
 from utils import create_video_paths_list, create_audio_paths_list, collate_many2many, MyLogger
 from losses import binary_cross_entropy, f1_accuracy_metrics_oncuda
 import os

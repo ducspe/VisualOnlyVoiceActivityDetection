@@ -76,7 +76,7 @@ def noise_robust_clean_speech_IBM(speech_t,
                                   ibm_threshold=50):
     """
     Create IBM labels robust to noisy speech recordings using noise-robst VAD.
-    In particular, the labels are robust to noise occuring before / after speech.
+    In particular, the labels are robust to noise occurring before / after speech.
     """
     # Compute vad
     vad = clean_speech_VAD(speech_t,

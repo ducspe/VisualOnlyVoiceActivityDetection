@@ -48,7 +48,7 @@ def create_ground_truth_labels_from_path(audio_path):
     return mask_labels.T
 
 
-def create_ground_truth_labels(raw_clean_audio, hop_per=hop_percent):
+def create_ground_truth_labels(raw_clean_audio):
 
     mask_labels = clean_speech_VAD(raw_clean_audio,
                            fs=sampling_rate,

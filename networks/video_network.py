@@ -1,4 +1,3 @@
-import torch
 import torch.nn as nn
 import torchvision.models as models
 import torch.nn.functional as F
@@ -19,10 +18,10 @@ class MyConvNet(nn.Module):
     def forward(self, x):
         # print("Initial shape: ", x.shape)
 
-        x = F.relu(self.conv1(x))  # first convolutional and pooling layer
+        x = F.relu(self.conv1(x))
         # print("After conv1: ", x.shape)
 
-        x = F.relu(self.conv2(x))  # second convolutional and pooling layer
+        x = F.relu(self.conv2(x))
         # print("After conv2: ", x.shape)
 
         x = F.relu(self.conv3(x))
